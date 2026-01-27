@@ -14,7 +14,7 @@ const HOST = '0.0.0.0';
 app.use(express.static(path.join(__dirname, 'dist')));
 
 // For any other requests, serve the index.html (for SPAs)
-app.get('*', (req, res) => {
+app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
