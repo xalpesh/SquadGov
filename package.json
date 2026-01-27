@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "npm run build && node server.js" // <--- ADD OR MODIFY THIS LINE
   },
   "dependencies": {
     "chart.js": "^4.4.1",
@@ -16,7 +17,8 @@
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
-    "tailwind-merge": "^2.2.1"
+    "tailwind-merge": "^2.2.1",
+    "express": "^4.x.x" // <--- ENSURE EXPRESS IS LISTED HERE AFTER INSTALL
   },
   "devDependencies": {
     "@types/react": "^18.2.64",
@@ -25,6 +27,7 @@
     "autoprefixer": "^10.4.18",
     "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1",
-    "vite": "^5.1.6"
+    "vite": "^5.1.6",
+    "@types/express": "^4.x.x" // <--- ENSURE @TYPES/EXPRESS IS LISTED HERE AFTER INSTALL
   }
 }
