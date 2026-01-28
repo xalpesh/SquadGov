@@ -7,14 +7,14 @@ import * as LucideIcons from 'lucide-react';
 // --- CONFIGURATION ---
 // 1. Paste your Firebase Config here (from console.firebase.google.com)
 const firebaseConfig = {
-  apiKey: "AIzaSyCG3Jozq2dQhQEQhw92gYRdlPe-iPGrii4",
-  authDomain: "squadgov.firebaseapp.com",
-  projectId: "squadgov",
-  storageBucket: "squadgov.firebasestorage.app",
-  messagingSenderId: "890935717907",
-  appId: "1:890935717907:web:9e7de0652b50ba0ed0cfe6",
-  measurementId: "G-253XHWW5P4"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID  
 };
+
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const db = getFirestore(app);
